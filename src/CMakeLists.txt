@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (scaling_octo_barnacle)
+set(CMAKE_BINARY_DIR bin)
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+install (TARGETS ${CMAKE_PROJECT_NAME} DESTINATION bin)

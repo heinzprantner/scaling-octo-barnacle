@@ -17,3 +17,8 @@ work on aose 11
 
     GITHUB: add file src/main.c
     HOST WS: git sync -mirror GITHUB with MIRROR
+
+### Step 2
+
+    GITHUB: add file src/CmakeLists.txt
+    HOST WS: git sync -mirror GITHUB with MIRROR
