@@ -25,7 +25,7 @@ work on aose 11
     cd scaling-octo-barnacle.git
     git remote add --mirror=push aose ssh://git@pluto.ham.hella.com:7999/aose/scaling-octo-barnacle.git
     git remote add --mirror=fetch github https://github.com/heinzprantner/scaling-octo-barnacle.git
-    git remote update
+    git remote update --prune
     git push aose --mirror
 
 ## Test Steps
