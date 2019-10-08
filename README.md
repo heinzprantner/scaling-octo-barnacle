@@ -7,11 +7,17 @@ work on aose 11
 ## Preparation
 
     GITHUB: Create Repository scaling-octo-barnacle
-    HOST WS: git clone https://github.com/heinzprantner/scaling-octo-barnacle.git
+    HOST WS GITHUB: git clone https://github.com/heinzprantner/scaling-octo-barnacle.git
+    HOST WS SYNC: git clone --mirror https://github.com/heinzprantner/scaling-octo-barnacle.git
     Bitbucket: Import Repository from github to MIRROR: scaling-octo-barnacle
     Bitbucket: Create FORK: hella-scaling-octo-barnacle
 
 ## Workspaces
+
+### HOST WS GITHUB
+
+    git clone https://github.com/heinzprantner/scaling-octo-barnacle.git
+    cd scaling-octo-barnacle
 
 ### HOST WS SYNC
 
@@ -26,10 +32,21 @@ work on aose 11
 
 ### Step 1
 
-    GITHUB: add file src/main.c
-    HOST WS: git sync -mirror GITHUB with MIRROR
+    HOST WS GITHUB: add file src/main.c
+    HOST WS SYNC: git sync -mirror GITHUB with MIRROR
+
+    CHECK: MIRROR and FORK are updated accordingly
 
 ### Step 2
 
-    GITHUB: add file src/CmakeLists.txt
-    HOST WS: git sync -mirror GITHUB with MIRROR
+    HOST WS GITHUB: add file src/CmakeLists.txt
+    HOST WS SYNC: git sync -mirror GITHUB with MIRROR
+
+    CHECK: MIRROR and FORK are updated accordingly
+
+### Step 3
+
+    HOST WS GITHUB: add branch
+    HOST WS SYNC: git sync -mirror GITHUB with MIRROR
+
+    CHECK: MIRROR and FORK are updated accordingly
