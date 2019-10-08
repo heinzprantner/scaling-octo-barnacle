@@ -23,10 +23,17 @@ work on aose 11
 
     git clone --mirror ssh://git@pluto.ham.hella.com:7999/aose/scaling-octo-barnacle.git
     cd scaling-octo-barnacle.git
+
     git remote add --mirror=push aose ssh://git@pluto.ham.hella.com:7999/aose/scaling-octo-barnacle.git
     git remote add --mirror=fetch github https://github.com/heinzprantner/scaling-octo-barnacle.git
+
     git remote update --prune
     git push aose --mirror
+
+### HOST WS FORK
+
+    git clone ssh://git@pluto.ham.hella.com:7999/aose/hella-scaling-octo-barnacle.git
+    cd hella-scaling-octo-barnacle
 
 ## Test Steps
 
