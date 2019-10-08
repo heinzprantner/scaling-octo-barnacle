@@ -53,7 +53,14 @@ work on aose 11
 
 ### Step 4
 
-    HOST WS GITHUB: add tag v0.0.1
+    HOST WS GITHUB: add tag v0.0.1 (this step also includes moving the tag)
+    HOST WS SYNC: git sync -mirror GITHUB with MIRROR
+
+    CHECK: MIRROR and FORK are updated accordingly
+
+### Step 5
+
+    HOST WS GITHUB: git merge branch to master, delete branch
     HOST WS SYNC: git sync -mirror GITHUB with MIRROR
 
     CHECK: MIRROR and FORK are updated accordingly
